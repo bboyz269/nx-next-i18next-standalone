@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "nx-next-i18next-standalone": "apps/nx-next-i18next-standalone",
+    "nx-next-i18next-standalone-e2e": "apps/nx-next-i18next-standalone-e2e"
+  }
+}

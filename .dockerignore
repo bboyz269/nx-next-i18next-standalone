@@ -1,0 +1,9 @@
+*
+!package.json
+!yarn.lock
+!apps
+!libs
+!nx.json
+!tsconfig.base.json
+!workspace.json
+.env.local

@@ -1,0 +1,27 @@
+{
+  "sourceRoot": "apps/nx-next-i18next-standalone-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/nx-next-i18next-standalone-e2e/cypress.json",
+        "devServerTarget": "nx-next-i18next-standalone:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "nx-next-i18next-standalone:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nx-next-i18next-standalone-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nx-next-i18next-standalone"]
+}
